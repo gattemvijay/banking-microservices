@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: transaction-service
+
+server:
+  port: 8083
+  
+jwt:
+  secret: mySuperSecretKeyForJwtThatIsAtLeastThirtyTwoChars
