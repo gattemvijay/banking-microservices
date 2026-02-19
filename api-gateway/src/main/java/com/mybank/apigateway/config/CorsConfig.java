@@ -47,6 +47,7 @@ public class CorsConfig {
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
                 .authorizeExchange(exchange -> exchange
                 		 .pathMatchers("/api/users/login", "/api/users/register").permitAll()
+                		 .pathMatchers("/api/accounts/").permitAll()
                         .anyExchange().permitAll()
                 )
                 .build();
